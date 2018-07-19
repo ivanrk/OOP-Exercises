@@ -11,6 +11,18 @@
         private List<Child> children;
         private Car car;
 
+        public Person()
+        {
+            this.pokemons = new List<Pokemon>();
+            this.parents = new List<Parent>();
+            this.children = new List<Child>();
+        }
+
+        public Person(string name) : this()
+        {
+            this.name = name;
+        }
+
         public string Name
         {
             get { return this.name; }
@@ -44,18 +56,6 @@
         {
             get { return this.car; }
             set { this.car = value; }
-        }
-
-        public Person()
-        {
-            this.pokemons = new List<Pokemon>();
-            this.parents = new List<Parent>();
-            this.children = new List<Child>();
-        }
-
-        public Person(string name) : this()
-        {
-            this.name = name;
         }
     }
 }

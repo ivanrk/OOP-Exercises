@@ -2,14 +2,6 @@
 {
     public class Engine
     {
-        public string Model { get; }
-
-        public int Power { get; }
-
-        public string Displacement { get; set; }
-
-        public string Efficiency { get; set; }
-
         public Engine(string model, int power)
         {
             this.Model = model;
@@ -17,5 +9,13 @@
             this.Displacement = "n/a";
             this.Efficiency = "n/a";
         }
+
+        public string Model { get; }
+
+        public int Power { get; }
+
+        public string Displacement { get; set; }
+
+        public string Efficiency { get; set; }
     }
 }

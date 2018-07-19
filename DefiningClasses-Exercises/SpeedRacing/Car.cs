@@ -9,17 +9,17 @@
         private decimal fuelConsumption;
         private decimal distanceTravelled;
 
-        public string Model
-        {
-            get { return this.model; }
-        }
-
         public Car(string model, decimal fuelAmount, decimal fuelConsumption)
         {
             this.model = model;
             this.fuelAmount = fuelAmount;
             this.fuelConsumption = fuelConsumption;
             this.distanceTravelled = 0;
+        }
+
+        public string Model
+        {
+            get { return this.model; }
         }
 
         public void CalculateDistance(decimal amountOfKm)
